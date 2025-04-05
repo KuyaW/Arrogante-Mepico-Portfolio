@@ -1,0 +1,439 @@
+@font-face {
+    font-family: Poppins;
+    src: url(./Font/Poppins-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(./pic/helloKitty.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header section ----------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(247, 213, 218, 0.8);
+    backdrop-filter: blur(4px);
+    /* background-color: lightblue; */
+}
+
+header > .leftSide{
+    display: flex;
+    align-items: center;
+
+}
+
+header > .leftSide > .imageHolder{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    background-image: url(./pic/arrogante.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header > .leftSide > h1{
+    margin-left: 20px;
+}
+
+header > .rightSide {
+    display: flex;
+    align-items: center;
+}
+
+header > .rightSide > nav{
+    
+}
+
+header > .rightSide > nav > a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 10px;
+    transition: .4s ease;
+    font-weight: bold;
+}
+header > .rightSide > nav > a:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+/*  -----------------------  Header section*/
+
+main{
+
+}
+
+
+
+main > .aboutUsHolder > .aboutUsContent{
+    display: flex;
+    padding: 20px 50px;
+    width: 80dvw;
+    margin: 40px auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09);
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    background-color: rgba(247, 213, 218, 0.697);
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+main > .aboutUsHolder > h1{
+    font-size: 2.4em;
+    text-align: center;
+    margin-top: 40px;
+}
+
+main > .aboutUsHolder > .aboutUsContent > .rightSide{
+    width: 50%;
+    height: 80dvh;
+    /* background-color: lightblue; */
+
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 40px;
+
+}
+
+main > .aboutUsHolder > .aboutUsContent > .rightSide > .name{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+}
+
+main > .aboutUsHolder > .aboutUsContent > .rightSide > .content{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+main > .aboutUsHolder > .aboutUsContent > .leftSide{
+    width: 50%;
+    height: 80dvh;
+    /* background-color: lightgreen; */
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main > .aboutUsHolder > .aboutUsContent > .leftSide > .imageHolder{
+    height: 40dvw;
+    width: 40dvw;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.buttonHolder {
+    width: 100%;
+
+}
+
+.buttonHolder  button{
+    padding: 8px 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 0px;
+    transition: .4s ease;
+}
+
+.buttonHolder  button:hover{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    border-radius: 10px;
+}
+
+.projects{
+    padding: 20px;
+    background-color: rgba(247, 213, 218, 0.697);
+    backdrop-filter: blur(4px);
+}
+
+.projects > h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.projectBox{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.05);
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(251, 248, 249, 0.697);
+}
+
+.projectBox > .imageHolder{
+    width: 100%;
+    height: 80%;
+    background: grey;
+    border-radius: 10px;
+}
+
+.projectHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.contactUS{
+    height: 90dvh;
+    background-color: rgba(247, 213, 218, 0.697);
+    backdrop-filter: blur(4px);
+    width: 80dvw;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.contactUS > h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.contactUS > .contactUsContent{
+    display: flex;
+}
+
+.contactUS > .contactUsContent > .leftSide{
+    width: 50%;
+    height: 90dvh;
+    /* background-color: lightgreen; */
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactUS > .contactUsContent > .leftSide > iframe{
+    width: 50%;
+    aspect-ratio: 1;
+    background-color: grey;
+}
+
+.contactUS > .contactUsContent > .rightSide{
+    width: 50%;
+    height: 90dvh;
+    /* background-color: lightgreen; */
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* .contactUS > .contactUsContent > .rightSide > h1{
+    width: 100%;
+    text-align: left;
+} */
+
+.contactUS > .contactUsContent > .rightSide > form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    max-width: 400px;
+}
+
+.contactUS > .contactUsContent > .rightSide > form input[type = email],
+.contactUS > .contactUsContent > .rightSide > form textarea {
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 2px solid red;
+    background: rgba(128, 128, 128, 0.224);
+
+}
+
+.contactUS > .contactUsContent > .rightSide > form input[type = submit]{
+    background-color: rgba(0,0,0,0.3);
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 10px;
+    margin-top: 20px;
+    border: none;
+}
+
+.contactUS > .contactUsContent > .rightSide > form input[type = submit]:hover{
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+}
+
+textarea{
+    height: 200px
+}
+
+.others > h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.youtube{
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    background-color: rgba(247, 213, 218, 0.697);
+    backdrop-filter: blur(4px);
+}
+
+.imageMap{
+    width: max-content;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    background-color: rgba(247, 213, 218, 0.697);
+    backdrop-filter: blur(4px);
+}
+
+.tableSection{
+    width: max-content;
+    margin: 0 auto;
+}
+
+table{
+    text-align: left;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 10px;;
+    background-color: rgba(247, 213, 218, 0.697);
+    backdrop-filter: blur(4px);
+    /* max-width: 400px; */
+    margin-bottom: 20px;
+}
+
+table th, table td{
+    padding: 10px;
+    width: 50%;
+}
+
+table th{
+    font-weight: bold;
+}
+
+table caption{
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.entities{
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    padding: 10px;
+    background-color: rgba(247, 213, 218, 0.697);
+    backdrop-filter: blur(4px);
+}
+
+#arrogantePP{
+    background-image: url(./pic/arrogantePP.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mepicoPP{
+    background-image: url(./pic/mepico2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px){
+    main > .aboutUsHolder > .aboutUsContent{
+        width: 90dvw;
+        flex-direction: column;
+    }
+    main > .aboutUsHolder > .aboutUsContent > .leftSide {
+        height: max-content;
+        width: 100%;
+    }
+
+    main > .aboutUsHolder > .aboutUsContent > .rightSide{
+        height: max-content;
+        width: 100%;
+        padding: 10px;
+    } 
+
+    main > .aboutUsHolder > .aboutUsContent > .rightSide > .name {
+        font-size: 2em;
+    }
+    main > .aboutUsHolder > .aboutUsContent > .leftSide > .imageHolder{
+        margin: 50px;
+    }
+
+    table{
+        max-width: 90vw;
+    }
+
+    .secondAboutUs{
+        flex-direction: column-reverse!important;
+    }
+    .projectBox{
+        width: 40vw;
+        height: 300px!important;
+    }
+
+    .contactUsContent{
+        flex-direction: column;
+        
+    }
+
+    .contactUsContent > .leftSide{
+        height: max-content!important;
+        width: 100%!important;
+        margin-top: 20px;
+    }
+
+    .contactUsContent > .leftSide iframe{
+        width: 200px!important;
+        height: 200px!important;
+    }
+
+    .contactUsContent > .rightSide{
+        height: max-content!important;
+        width: 100%!important;
+        margin-top: 20px;
+    }
+
+    .contactUsContent > .rightSide form{
+        width: 100%!important;
+    }
+}
